@@ -13,6 +13,13 @@
 
 Project that controls 4 DC motors using a Raspberry 4 and an Arduino Uno
 
+## Purpose
+As the code serves to provide an universal software control mechanism, the only limit is the user's imagination.
+A good example of an use case is a 2-axis Gantry robot, with two of the DC motors providing x-axis movement, and the other two providing y-axis movement.
+<img src="https://www.azorobotics.com/images/equipments/EquipmentImage_271.jpg"
+     alt="gantry"
+     width=50% height=50% />
+
 ## Specs
 | **Component** | **Model** |
 | ------------- | --------- |
