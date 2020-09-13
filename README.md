@@ -45,16 +45,16 @@ git clone https://www.github.com/mihaialexandruteodor/RaspberryArduinoServo
 
 -[x] You might need to install pathlib by running
 ```
-sudo pip install pathlib
+sudo pip3 install pathlib
 ```
 
 - [x] Run the main.py file (this will also install the sketch on your Arduino)
 ```
-python main.py
+python3 main.py
 ```
 - [x] Run the reset.py if you need to clear the Arduino memory
 ```
-python reset.py
+python3 reset.py
 ```
 
 
