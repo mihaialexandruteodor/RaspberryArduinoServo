@@ -43,7 +43,7 @@ How to start:
 git clone https://www.github.com/mihaialexandruteodor/RaspberryArduinoServo    
 ```
 
--[x] You might need to install pathlib by running
+- [x] You might need to install pathlib by running
 ```
 sudo pip3 install pathlib
 ```
@@ -60,3 +60,4 @@ python3 reset.py
 
 Thanks:
 https://makerprojekt.com/portfolio/python-arduino-servo-control/
+https://arduino.stackexchange.com/a/76360
