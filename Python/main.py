@@ -5,6 +5,7 @@ from subprocess import run
 import struct
 import time
 import os
+from os import system, name 
 from pathlib import Path
 
 def clear(): 
