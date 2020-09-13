@@ -77,13 +77,13 @@ void loop() {
             delay(1000);
             break;
         case 2 :
-            M3_advance(100);
-            M4_advance(100);
+            M1_back(100);
+            M2_back(100);
             delay(1000);
             break;
         case 3 :
-            M1_back(100);
-            M2_back(100);
+            M3_advance(100);
+            M4_advance(100);
             delay(1000);
             break;
         case 4 :
