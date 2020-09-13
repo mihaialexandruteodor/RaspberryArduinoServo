@@ -74,18 +74,22 @@ void loop() {
         case 1 :
             M1_advance(100);
             M2_advance(100);
+            delay(1000);
             break;
         case 2 :
             M3_advance(100);
             M4_advance(100);
+            delay(1000);
             break;
         case 3 :
             M1_back(100);
             M2_back(100);
+            delay(1000);
             break;
         case 4 :
             M3_back(100);
             M4_back(100);
+            delay(1000);
             break;
         default :
            Serial.println("Invalid command" );
