@@ -3,6 +3,7 @@
 import serial   
 import os
 import struct
+import time
 from pathlib import Path
 
 
@@ -12,11 +13,11 @@ dir_path = str(path.parent) + "/Arduino/sketch/sketch.ino.standard.hex"
 
 os.system("sudo avrdude -p m328p -c arduino -P //dev//ttyACM0 -b 115200 -U flash:w:"+dir_path+":i")
 
-sleep(1)
+time.sleep(1)
 
 Serial('/dev/ttyACM0',baudrate=115200).close()
 
-sleep(1)
+time.sleep(1)
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
 

@@ -42,6 +42,12 @@ How to start:
 ```
 git clone https://www.github.com/mihaialexandruteodor/RaspberryArduinoServo    
 ```
+
+-[x] You might need to install pathlib by running
+```
+sudo pip install pathlib
+```
+
 - [x] Run the main.py file (this will also install the sketch on your Arduino)
 ```
 python main.py
