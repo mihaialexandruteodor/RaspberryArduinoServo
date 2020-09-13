@@ -15,7 +15,7 @@ os.system("sudo avrdude -p m328p -c arduino -P //dev//ttyACM0 -b 115200 -U flash
 
 time.sleep(1)
 
-Serial('/dev/ttyACM0',baudrate=115200).close()
+serial.Serial('/dev/ttyACM0',baudrate=115200).close()
 
 time.sleep(1)
 
