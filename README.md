@@ -52,6 +52,14 @@ sudo pip3 install pathlib
 ```
 python3 main.py
 ```
+
+- [x] Use 1,2,3 or 4 as command for the motors
+```
+1 - forward x axis
+2 - backward x axis
+3 - forward y axis
+4 - backward y axis
+```
 - [x] Run the reset.py if you need to clear the Arduino memory
 ```
 python3 reset.py

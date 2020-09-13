@@ -27,8 +27,12 @@ time.sleep(2)
 ser.open()
 
 while True:
-	#command = str(input ("instruction: "))
-	command = 1
+	run(["clear"])
+	print("1 - forward x axis\n")
+        print("2 - backward x axis\n")
+        printl"3 - forward y axis\n")
+        printl"4 - backward y axis\n")                                  
+        command = str(input ("instruction: ")) 
 	ser.write(str(command).encode())
 	reachedPos = str(ser.readline())
 	print(reachedPos)
