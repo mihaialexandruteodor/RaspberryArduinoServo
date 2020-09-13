@@ -1,7 +1,5 @@
 # RaspberryArduinoServo
 
-## CURRENTLY IN DEVELOPMENT
-
 
 <img src="https://raw.githubusercontent.com/mihaialexandruteodor/mihaialexandruteodor/master/repoImages/RaspberryArduinoServo/stage1.jpg"
      alt="stage 1"
