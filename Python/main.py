@@ -1,29 +1,34 @@
 """ Mihai Alexandru Teodor 2020 """
 
-import serial   
-import os
+from serial import Serial
+from subprocess import run
 import struct
 import time
+import os
 from pathlib import Path
 
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 path = Path(dir_path)
-dir_path = str(path.parent) + "/Arduino/sketch/sketch.ino.standard.hex"
+dir_path = "flash:w:"+ str(path.parent) + "/Arduino/sketch/sketch.ino.standard.hex:i"
 
-os.system("sudo avrdude -p m328p -c arduino -P //dev//ttyACM0 -b 115200 -U flash:w:"+dir_path+":i")
-
+Serial('/dev/ttyACM0', 115200).close()
 time.sleep(1)
 
-serial.Serial('/dev/ttyACM0',baudrate=115200).close()
+run(["avrdude", "-p", "m328p", "-c", "arduino", "-P", "//dev//ttyACM0", "-b", "115200", "-U", dir_path])
+time.sleep(2)
 
-time.sleep(1)
+ser = Serial('/dev/ttyACM0',9600)
+ser.reset_output_buffer()
+ser.flush()
+ser.close()
 
-ser = serial.Serial('/dev/ttyACM0', 9600)
+time.sleep(2)
+ser.open()
 
-while True:                                            
-        #command = str(input ("instruction: "))      
-        command = 1
-        ser.write(struct.pack('B', command))                          
-        reachedPos = str(ser.readline())            
-        print(reachedPos)       
+while True:
+	#command = str(input ("instruction: "))
+	command = 1
+	ser.write(str(command).encode())
+	reachedPos = str(ser.readline())
+	print(reachedPos)
