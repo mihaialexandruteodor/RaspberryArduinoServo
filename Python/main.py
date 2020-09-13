@@ -33,6 +33,6 @@ while True:
 	print("3 - forward y axis\n")
 	print("4 - backward y axis\n")
 	command = str(input ("instruction: "))
-	ser.write(str(command).encode())
+	ser.write(command.encode())
 	reachedPos = str(ser.readline())
 	print(reachedPos)
